@@ -1,0 +1,51 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Padding around the navbar */
+}
+
+.navbar .logo {
+    font-size: 24px; /* Logo font size */
+    color: white; /* Logo color */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar .nav-links {
+    display: flex; /* Display links inline */
+}
+
+.navbar .nav-links a {
+    color: black; /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding around links */
+   /* Smooth transition for hover effect */
+}
+
+
+
+/* Responsive Design */
+
+
+.navbar .logo{
+    border: 8px;
+    margin-top: 4;
+}
+
+.main_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    
+}
