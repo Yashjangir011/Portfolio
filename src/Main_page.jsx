@@ -1,7 +1,12 @@
+import NavBar from "./nav"
 
 function Main_page(){
     return (
-        <div className="main_page">
+        <div>
+            <div>
+                <NavBar/>
+            </div>
+            <div className="main_page">
             <div className="main_text">
                 <div className="up_text">
                 YOUR FEET DESERVE
@@ -12,7 +17,7 @@ function Main_page(){
                  
             </div>
             <div>
-                <img src="/public/images/shoe_image.png" alt="" />
+                <img src="/images/shoe_image.png" alt="" />
             </div>
             <div className="buy_option">
                 <div>
@@ -24,6 +29,7 @@ function Main_page(){
                     <input type="number" placeholder="SHOE SIZE" />
                 </div>
             </div>
+        </div>
         </div>
         
     )

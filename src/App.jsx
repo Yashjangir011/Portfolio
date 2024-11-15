@@ -1,14 +1,17 @@
 
 import './App.css'
 import Main_page from './Main_page'
-import NavBar from './nav'
+import login_page from './login_page'
+import { BrowserRouter, Route, Router, Routes, Switch } from 'react-router-dom'
 
 function App() {
   return (
-    <>
-      <NavBar/>
-      <Main_page/>
-    </>
+    <BrowserRouter>
+       <Routes>
+       <Route path='/mainpage' element={<Main_page/>}/>
+       <Route path='/loginpage' element={< login_page />}/>
+       </Routes>
+    </BrowserRouter>
   )
 }
 
