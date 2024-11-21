@@ -1,18 +1,22 @@
 // Login.js
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
-const login_page = () => {
+const Login_Page = () => {
+
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const navigate = useNavigate();
 
-    const handleLogin = (event) => {
-        event.preventDefault();
-        // Here you can add authentication logic if needed
-        navigate('/another-page'); // Change to your target route
+    const handleLogin = (e) => {
+        e.preventDefault();
+        // Basic validation (you can replace this with actual authentication logic)
+        if (username && password) {
+            alert(`Username: ${username}\nPassword: ${password}`);
+            // Here you would typically handle the login logic (e.g., API call)
+        } else {
+            alert('Please enter both username and password');
+        }
     };
-
+    
     return (
         <div>
             <h1>Login</h1>
@@ -41,4 +45,4 @@ const login_page = () => {
     );
 };
 
-export default login_page;
+export default Login_Page;

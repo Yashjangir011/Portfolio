@@ -1,16 +1,17 @@
 
 import './App.css'
 import Main_page from './Main_page'
-import login_page from './login_page'
-import { BrowserRouter, Route, Router, Routes, Switch } from 'react-router-dom'
+import Login_Page from './Login_Page';
+import { BrowserRouter, Route, Routes } from 'react-router-dom' 
 
 function App() {
   return (
+
     <BrowserRouter>
-       <Routes>
-       <Route path='/mainpage' element={<Main_page/>}/>
-       <Route path='/loginpage' element={< login_page />}/>
-       </Routes>
+      <Routes>
+        <Route path="/" element={<Main_page />} />
+        <Route path="/login" element={<Login_Page />} />
+      </Routes>
     </BrowserRouter>
   )
 }
