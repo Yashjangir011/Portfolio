@@ -1,24 +1,27 @@
 // Login.js
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import './index.css'
+
+let user = []
 
 const Login_Page = () => {
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
-    const handleLogin = (e) => {
+    const handleLogin = async (e) => {
         e.preventDefault();
-        // Basic validation (you can replace this with actual authentication logic)
-        if (username && password) {
-            alert(`Username: ${username}\nPassword: ${password}`);
-            // Here you would typically handle the login logic (e.g., API call)
-        } else {
-            alert('Please enter both username and password');
-        }
+        
+        alert(`username ${username} password ${password}`)
+        
+        setUsername(''); // this will clear username input
+        setPassword(''); // this will gonna clear the pass input
+    
+
     };
     
     return (
-        <div>
+        <div className='log_pg'>
             <h1>Login</h1>
             <form onSubmit={handleLogin}>
                 <label htmlFor="username">Username:</label>
@@ -26,7 +29,7 @@ const Login_Page = () => {
                     type="text"
                     id="username"
                     value={username}
-                    onChange={(e) => setUsername(e.target.value)}
+                    onChange={(e) => setUsername(e.target.value)} 
                     required
                 />
                 <br />
@@ -35,7 +38,7 @@ const Login_Page = () => {
                     type="password"
                     id="password"
                     value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    onChange={(e) => setPassword(e.target.value)} 
                     required
                 />
                 <br />
