@@ -2,8 +2,8 @@
 import './App.css'
 import './index.css'
 import Main_page from './Main_page'
-import Login_Page from './Login_Page';
 import { BrowserRouter, Route, Routes } from 'react-router-dom' 
+import Login_Page from './Login_Page'
 
 function App() {
   return (

@@ -6,7 +6,8 @@ function NavBar(){
 
     function handleClick(){
         navigate('/login')
-     }
+    
+    }
 
     return(
     <div class="navbar">
