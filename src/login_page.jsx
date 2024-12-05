@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import './index.css'
 
-let user = []
+// let user = []
 
 const Login_Page = () => {
 
@@ -12,12 +12,10 @@ const Login_Page = () => {
     const handleLogin = async (e) => {
         e.preventDefault();
         
-        alert(`username ${username} password ${password}`)
+        alert(`this is your username ${username} and password ${password}`)
         
         setUsername(''); // this will clear username input
         setPassword(''); // this will gonna clear the pass input
-    
-
     };
     
     return (
