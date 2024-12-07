@@ -1,32 +1,33 @@
 import { useNavigate } from "react-router-dom";
 
-function NavBar(){
-
+function NavBar() {
     const navigate = useNavigate();
 
-    function handleClick(){
-        navigate('/login')
-    
+    function handleClick() {
+        navigate('/login');
     }
 
-    return(
-    <div class="navbar">
-            <div class="logo">
-                <img src="/images/brand_logo.png " alt="" />
+    return (
+        <nav className="flex justify-between items-center p-4  text-black">
+            <div>
+                <img src="/images/jordan_logo.png" alt="Brand Logo" className="h-16" />
             </div>
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <div class="log">
-            <button onClick={handleClick}>Login</button>
-        </div>
-    </div>
-    )
+            <div className="hidden md:flex space-x-4">
+                <a href="#home" className=" hover:bg-black hover:text-white rounded-full px-4 py-2">Home</a>
+                <a href="#services" className=" hover:bg-black hover:text-white rounded-full px-4 py-2">Services</a>
+                <a href="#about" className=" hover:bg-black hover:text-white rounded-full px-4 py-2">About</a>
+                <a href="#contact" className=" hover:bg-black hover:text-white rounded-full px-4 py-2">Contact</a>
+            </div>
+            <div>
+                <button 
+                    onClick={handleClick} 
+                    className="bg-black text-white font-bold py-2 px-4 rounded"
+                >
+                    Login
+                </button>
+            </div>
+        </nav>
+    );
 }
 
-
-export default NavBar
-
+export default NavBar;
