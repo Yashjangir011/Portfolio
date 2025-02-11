@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 const Signup_Page = () => {
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState({ // formData is an object that stores the form data   
         fullName: '',
         email: '',
         username: '',
@@ -11,22 +12,22 @@ const Signup_Page = () => {
         phoneNumber: ''
     });
 
-    const handleChange = (e) => {
-        setFormData({
+    const handleChange = (e) => { // handleChange is a function that updates the form data
+        setFormData({  // setFormData is a function that updates the form data
             ...formData,
-            [e.target.name]: e.target.value
+            [e.target.name]: e.target.value // e.target.name is the name of the input field and e.target.value is the value of the input field
         });
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if(formData.password !== formData.confirmPassword) {
+        if(formData.password !== formData.confirmPassword) { // if the password and confirm password do not match
             alert("Passwords don't match!");
             return;
         }
         alert('Account created successfully!');
         // Reset form
-        setFormData({
+        setFormData({ // setFormData is a function that updates the form data   
             fullName: '',
             email: '',
             username: '',
