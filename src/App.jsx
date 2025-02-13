@@ -6,11 +6,12 @@ import Project from './project'
 
 function App() {
   return (
-    <BrowserRouter>
+    <div>
       <Navbar />
       <About />
       <Project />
-    </BrowserRouter>
+    </div>
+      
   )
 }
 
