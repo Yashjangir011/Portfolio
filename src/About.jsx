@@ -30,16 +30,16 @@ function About() {
             </div>
             <div className="max-w-4xl text-2xl font-semibold leading-relaxed text-center space-y-6 px-4">
                 <p className="font-doto text-2xl animate-on-scroll animation-delay-300">
-                    > I am a full-stack developer from Rajasthan, currently pursuing a B.Tech in Artificial Intelligence and Data Science
+                     I am a full-stack developer from Rajasthan, currently pursuing a B.Tech in Artificial Intelligence and Data Science
                 </p>
                 <p className="font-doto text-2xl animate-on-scroll animation-delay-400">
-                    > I have a strong passion for building scalable web solutions.
+                     I have a strong passion for building scalable web solutions.
                 </p>
                 <p className="font-doto text-2xl animate-on-scroll animation-delay-500">
-                    > love solving complex problems through data structures, algorithms, and competitive programming.
+                     love solving complex problems through data structures, algorithms, and competitive programming.
                 </p>
                 <p className="font-doto text-2xl animate-on-scroll animation-delay-600">
-                    > Constantly learning and refining my skills, I strive to create efficient and impactful digital experiences.
+                     Constantly learning and refining my skills, I strive to create efficient and impactful digital experiences.
                 </p>
             </div>
         </div>

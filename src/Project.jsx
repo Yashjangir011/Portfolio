@@ -6,7 +6,7 @@ function Project(){
             </div>
             <div className="m-5 flex p-8 text-3xl font-bodoni justify-between">
                 <div className="mt-7 ">
-                    CONTACT ME >
+                    CONTACT ME 
                 </div>
                 
                 <div className="mt-5 mb-4 pt-19 pb-12 mr-3 pl-4 flex space-x-10">
