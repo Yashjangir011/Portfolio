@@ -1,5 +1,5 @@
-import Main_page from "./Main_page"
-import About from './About'
+import Main_page from "./Main_page.jsx"
+
 
 function Navbar(){
     return (
